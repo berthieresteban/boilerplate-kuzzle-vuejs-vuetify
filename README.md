@@ -1,2 +1,1 @@
-# kuzzle_plugin_objenious
-Wrap objenious API
+### Kuzzle plugin Objenious
