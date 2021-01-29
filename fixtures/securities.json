@@ -1,0 +1,82 @@
+{
+    "roles": {
+        "anonymous": {
+            "controllers": {
+                "*": {
+                    "actions": {
+                        "*": true
+                    }
+                }
+            }
+        },
+        "admin": {
+            "controllers": {
+                "*": {
+                    "actions": {
+                        "*": true
+                    }
+                }
+            }
+        },
+        "default": {
+            "controllers": {
+                "*": {
+                    "actions": {
+                        "*": true
+                    }
+                }
+            }
+        }
+    },
+    "profiles": {
+        "anonymous": {
+            "policies": [
+                {
+                    "roleId": "anonymous"
+                }
+            ]
+        },
+        "admin": {
+            "policies": [
+                {
+                    "roleId": "admin"
+                }
+            ]
+        },
+        "default": {
+            "policies": [
+                {
+                    "roleId": "default"
+                }
+            ]
+        }
+    },
+    "users": {
+        "admin": {
+            "content": {
+                "profileIds": [
+                    "admin"
+                ]
+            },
+            "credentials": {
+                "local": {
+                    "username": "admin",
+                    "password": "admin"
+                }
+            }
+        },
+        "default": {
+            "content": {
+                "profileIds": [
+                    "default"
+                ]
+            },
+            "credentials": {
+                "local": {
+                    "username": "default-user",
+                    "password": "default-user"
+                }
+            }
+        }
+    }
+}
