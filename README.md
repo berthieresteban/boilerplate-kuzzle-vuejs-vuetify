@@ -62,7 +62,8 @@ cd apps/backend
 npm run dev:docker
 ```
 
-And initialize it after adapt the `./initializationFiles/*` files to your need
+Adapt the `./initializationFiles/*` files to your need
+Then you will need the kuzzle cli, [kourou](https://www.npmjs.com/package/kourou) to initialize your backend
 ```bash
 kourou admin:loadMappings < ./initializationFiles/mappings.json
 kourou admin:loadFixtures < ./initializationFiles/fixtures.json
