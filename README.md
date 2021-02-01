@@ -1,5 +1,18 @@
 ## Development
 
+# Install Backend
+```bash
+cd apps/backend
+npm install
+npm run install:docker
+```
+
+# Install Frontend
+```bash
+cd apps/frontend
+npm install
+```
+
 # Run Backend
 
 ```bash
