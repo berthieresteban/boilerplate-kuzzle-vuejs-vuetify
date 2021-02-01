@@ -1,0 +1,33 @@
+{
+    "testindex": {
+        "testcollection": {
+            "properties": {
+                "integerfield": {
+                    "type": "integer"
+                },
+                "floatfield": {
+                    "type": "float"
+                },
+                "textfield": {
+                    "type": "text"
+                },
+                "keywordfield": {
+                    "type": "keyword"
+                },
+                "geopointfield": {
+                    "type": "geo_point"
+                },
+                "datefield": {
+                    "type": "date"
+                },
+                "objectfield": {
+                   "properties": {
+                       "subtextfield": {
+                           "type": "text"
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

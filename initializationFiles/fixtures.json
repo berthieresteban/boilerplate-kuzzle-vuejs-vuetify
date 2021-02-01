@@ -1,0 +1,44 @@
+{
+    "testindex": {
+        "testcollection": [
+            {
+                "index": {
+                    "_id": "id-document-1"
+                }
+            }, 
+            {
+                "integerfield": 1,
+                "floatfield": 1.1,
+                "textfield": "text1",
+                "keywordfield": "keyword1",
+                "geopointfield": {
+                    "lat": 41.3432423,
+                    "lon": 1.234234
+                },
+                "datefield": 1612201403,
+                "objectfield": {
+                   "subtextfield": "sub text1"
+                }
+            },
+            {
+                "index": {
+                    "_id": "id-document-2"
+                }
+            }, 
+            {
+                "integerfield": 2,
+                "floatfield": 2.2,
+                "textfield": "text2",
+                "keywordfield": "keyword2",
+                "geopointfield": {
+                    "lat": 42.3432423,
+                    "lon": 2.234234
+                },
+                "datefield": 1612201405,
+                "objectfield": {
+                   "subtextfield": "sub text1"
+                }
+            }
+        ]
+    }
+}
