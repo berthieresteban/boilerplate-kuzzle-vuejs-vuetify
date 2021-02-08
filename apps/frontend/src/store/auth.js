@@ -11,6 +11,7 @@ const state = {
   const actions = {
     LOGIN: async ({ dispatch }, { credentials, kuzzle }) => {
       let jwt;
+      /* eslint-disable */
       try {
         jwt = await kuzzle.auth.login('local', credentials, '7 days');
         await dispatch('FETCH_CURRENT_USER', kuzzle);

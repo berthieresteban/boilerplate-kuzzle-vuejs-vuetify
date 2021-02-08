@@ -1,12 +1,12 @@
 <template>
-  <div id="app">
+  <v-app>
     <router-view v-if="!$store.state.app.waitingForConnection" />
     <offline v-else />
     <v-snackbar v-model="offlineToast" bottom right :timeout="-1">
       {{ $t("offline.title") }}
       {{ $t("offline.message") }}
     </v-snackbar>
-  </div>
+  </v-app>
 </template>
 
 <script>

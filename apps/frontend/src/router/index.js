@@ -55,7 +55,7 @@ export const createRouter = (kuzzle, store) => {
      * passing to the next route.
      */
     const offlinePageDelay = 1500;
-    return new Promise(async resolve => {
+    return new Promise(resolve => {
       setTimeout(() => {
         if (!store.state.app.online) {
           store.commit('app/SET_WAITING_FOR_CONNECTION');
